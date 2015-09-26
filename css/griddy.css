@@ -7,7 +7,7 @@
 */
 
 
-/* RESET CLASSES */
+/**** RESET CLASSES ****/
 
 /* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
@@ -22,13 +22,48 @@ html {
 }
 
 
-/* GRID SYSTEM CLASSES */
+/**** GRID SYSTEM CLASSES (Mobile First) ****/
+
+/* PHONE - fluid 20em-25em (320-400px) */
+
+body {
+  min-width: 20em;
+  max-width: 25em;
+}
+
+
+/* TABLET - fluid 40-50em (600-800px) */
+
+@media only screen and (min-device-width: 40em) {
+
+  body {
+    max-width: 50em;
+  }
 
 
 
 
 
-/* HELPER CLASSES */
+}
+
+
+/* COMPUTER - fluid 50.01-60em (801-960px) */
+
+@media only screen and (min-device-width: 50.01em) {
+
+  body {
+    max-width: 60em;
+  }
+
+
+
+
+
+}
+
+
+
+/**** HELPER CLASSES ****/
 
 /* https://css-tricks.com/snippets/css/clear-fix/ */
 .clearfix:after {
