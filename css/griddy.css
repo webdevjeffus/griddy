@@ -7,7 +7,7 @@
 */
 
 
-/* RESET CLASSES */
+/**** RESET CLASSES ****/
 
 /* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
@@ -17,18 +17,167 @@ html {
   box-sizing: inherit;
 }
 
-html {
-  font-size: 16px;
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 0.75rem 0;
+}
+
+/*
+article,
+aside,
+section,
+aside,
+header,
+main,
+footer,
+nav {
+  padding: 0.75rem 1rem 0;
+}
+*/
+
+img {
+  margin: 0;
+  padding-bottom: 0.75rem;
+  width: 100%;
 }
 
 
-/* GRID SYSTEM CLASSES */
+
+
+/**** GRID SYSTEM CLASSES (Mobile First) ****/
+
+/* PHONE - fluid 20em-25em (320-400px) */
+
+html {
+  font-size: 12px;
+  color: blue;
+  background-color: #ccc;
+}
+
+body {
+  min-width: 20em;
+  max-width: 25em;
+  background-color: #eee;
+}
+
+.row {
+  padding-top: 0.75rem;
+}
+
+.gtr {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hero {
+  padding: 0;
+}
+
+.bleed {
+  margin: 0;
+  padding: 0;
+}
+
+.ph-col-1  { width:   8.333%; float: left;}
+.ph-col-2  { width:  16.667%; float: left;}
+.ph-col-3  { width:  25%;     float: left;}
+.ph-col-4  { width:  33.333%; float: left;}
+.ph-col-5  { width:  41.667%; float: left;}
+.ph-col-6  { width:  50%;     float: left;}
+.ph-col-7  { width:  58.333%; float: left;}
+.ph-col-8  { width:  66.667%; float: left;}
+.ph-col-9  { width:  75%;     float: left;}
+.ph-col-10 { width:  83.333%; float: left;}
+.ph-col-11 { width:  91.667%; float: left;}
+.ph-col-12 { width: 100%;}
 
 
 
 
 
-/* HELPER CLASSES */
+
+
+
+/* TABLET - fluid 40-50em (600-800px) */
+
+@media only screen and (min-width: 40em) {
+
+  html {
+    font-size: 14px;
+    color: green;
+  }
+
+  body {
+    max-width: 50em;
+  }
+
+  .tab-col-1  { width:   8.333%; float: left;}
+  .tab-col-2  { width:  16.667%; float: left;}
+  .tab-col-3  { width:  25%;     float: left;}
+  .tab-col-4  { width:  33.333%; float: left;}
+  .tab-col-5  { width:  41.667%; float: left;}
+  .tab-col-6  { width:  50%;     float: left;}
+  .tab-col-7  { width:  58.333%; float: left;}
+  .tab-col-8  { width:  66.667%; float: left;}
+  .tab-col-9  { width:  75%;     float: left;}
+  .tab-col-10 { width:  83.333%; float: left;}
+  .tab-col-11 { width:  91.667%; float: left;}
+  .tab-col-12 { width: 100%;}
+
+
+
+
+}
+
+
+/* COMPUTER - fluid 50.01-60em (801-960px) */
+
+@media only screen and (min-width: 50.01em) {
+
+  html {
+    font-size: 16px;
+    color: black;
+  }
+
+  body {
+    max-width: 60em;
+  }
+
+  .cmp-col-1  { width:   8.333%; float: left;}
+  .cmp-col-2  { width:  16.667%; float: left;}
+  .cmp-col-3  { width:  25%;     float: left;}
+  .cmp-col-4  { width:  33.333%; float: left;}
+  .cmp-col-5  { width:  41.667%; float: left;}
+  .cmp-col-6  { width:  50%;     float: left;}
+  .cmp-col-7  { width:  58.333%; float: left;}
+  .cmp-col-8  { width:  66.667%; float: left;}
+  .cmp-col-9  { width:  75%;     float: left;}
+  .cmp-col-10 { width:  83.333%; float: left;}
+  .cmp-col-11 { width:  91.667%; float: left;}
+  .cmp-col-12 { width: 100%;}
+
+
+
+}
+
+
+
+/**** HELPER CLASSES ****/
 
 /* https://css-tricks.com/snippets/css/clear-fix/ */
 .clearfix:after {
