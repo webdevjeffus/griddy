@@ -31,7 +31,16 @@ p {
   margin: 0 0 0.75rem 0;
 }
 
-/*
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+ p:first-child {
+  margin-top: 0.75rem;
+}
+
 article,
 aside,
 section,
@@ -40,9 +49,9 @@ header,
 main,
 footer,
 nav {
-  padding: 0.75rem 1rem 0;
+  padding: 0;
 }
-*/
+
 
 img {
   margin: 0;
@@ -70,20 +79,10 @@ body {
   background-color: #eee;
 }
 
-.row {
-  padding-top: 0.75rem;
-}
-
-
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
-
-.bleed {
-  margin: 0;
-  padding: 0;
 }
 
 .ph-col-1  { width:   8.333%; float: left;}
@@ -98,6 +97,20 @@ body {
 .ph-col-10 { width:  83.333%; float: left;}
 .ph-col-11 { width:  91.667%; float: left;}
 .ph-col-12 { width: 100%;}
+
+.box.ph-col-1  { width:   6.333%; float: left; }
+.box.ph-col-2  { width:  14.667%; float: left; }
+.box.ph-col-3  { width:  23%;     float: left; }
+.box.ph-col-4  { width:  31.333%; float: left; }
+.box.ph-col-5  { width:  39.667%; float: left; }
+.box.ph-col-6  { width:  48%;     float: left; }
+.box.ph-col-7  { width:  56.333%; float: left; }
+.box.ph-col-8  { width:  64.667%; float: left; }
+.box.ph-col-9  { width:  73%;     float: left; }
+.box.ph-col-10 { width:  81.333%; float: left; }
+.box.ph-col-11 { width:  89.667%; float: left; }
+.box.ph-col-12 { width:  98%; }
+
 
 .ph-ins-25,
 .ph-ins-33,
@@ -137,6 +150,19 @@ body {
   .tab-col-10 { width:  83.333%; float: left; }
   .tab-col-11 { width:  91.667%; float: left; }
   .tab-col-12 { width: 100%; }
+
+  .box.tab-col-1  { width:   6.333%; float: left; }
+  .box.tab-col-2  { width:  14.667%; float: left; }
+  .box.tab-col-3  { width:  23%;     float: left; }
+  .box.tab-col-4  { width:  31.333%; float: left; }
+  .box.tab-col-5  { width:  39.667%; float: left; }
+  .box.tab-col-6  { width:  48%;     float: left; }
+  .box.tab-col-7  { width:  56.333%; float: left; }
+  .box.tab-col-8  { width:  64.667%; float: left; }
+  .box.tab-col-9  { width:  73%;     float: left; }
+  .box.tab-col-10 { width:  81.333%; float: left; }
+  .box.tab-col-11 { width:  89.667%; float: left; }
+  .box.tab-col-12 { width:  98%; }
 
   .ph-ins-25,
   .ph-ins-33,
@@ -189,6 +215,20 @@ body {
   .cmp-col-10 { width:  83.333%; float: left; }
   .cmp-col-11 { width:  91.667%; float: left; }
   .cmp-col-12 { width: 100%; }
+
+  .box.cmp-col-1  { width:   6.333%; float: left; }
+  .box.cmp-col-2  { width:  14.667%; float: left; }
+  .box.cmp-col-3  { width:  23%;     float: left; }
+  .box.cmp-col-4  { width:  31.333%; float: left; }
+  .box.cmp-col-5  { width:  39.667%; float: left; }
+  .box.cmp-col-6  { width:  48%;     float: left; }
+  .box.cmp-col-7  { width:  56.333%; float: left; }
+  .box.cmp-col-8  { width:  64.667%; float: left; }
+  .box.cmp-col-9  { width:  73%;     float: left; }
+  .box.cmp-col-10 { width:  81.333%; float: left; }
+  .box.cmp-col-11 { width:  89.667%; float: left; }
+  .box.cmp-col-12 { width:  98%; }
+
 
   .ph-ins-25,
   .ph-ins-33,
@@ -243,6 +283,12 @@ body {
 
 /**** HELPER CLASSES ****/
 
+.bleed {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
 .gtr-l {padding-left: 0.6rem;}
 .gtr-r {padding-right: 0.6rem;}
 
@@ -259,6 +305,15 @@ body {
   padding-right: 1.2rem;
 }
 
+.box {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  margin: 0.75rem 1%;
+}
+
+.headroom {
+  padding-top: 0.75rem;
+}
 
 .txt-ctr {
   text-align: center;
