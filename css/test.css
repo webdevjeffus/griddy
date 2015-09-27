@@ -2,11 +2,24 @@ html {
 
 }
 
-header {
+.header-box {
   background-color: coral;
   border: 1px red solid;
 }
 
+.bottom-border {
+  border-bottom: 1px solid green;
+}
+
+.yellow-bg {
+  background-color: yellow;
+}
+
 aside {
   font-size: 0.8em;
+}
+
+.blog-prev {
+  background-color: aqua;
+  border: 1px solid blue;
 }
