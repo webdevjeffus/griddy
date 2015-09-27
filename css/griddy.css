@@ -64,7 +64,7 @@ img {
 
 /**** GRID SYSTEM CLASSES (Mobile First) ****/
 
-/* PHONE - fluid 20em-25em (320-400px) */
+/* PHONE - fluid 320-400px */
 
 html {
   font-size: 12px;
@@ -74,8 +74,8 @@ html {
 }
 
 body {
-  min-width: 20em;
-  max-width: 25em;
+  min-width: 320px;
+  max-width: 400px;
   background-color: #eee;
 }
 
@@ -123,11 +123,16 @@ body {
 .ph-ins-33 { width: 33%; }
 .ph-ins-50 { width: 50%; }
 
+.ph-hide-inl,
+.ph-hide-blk,
+.ph-hide-ib {
+  display: none;
+}
 
 
-/* TABLET - 42em (672px) */
+/* TABLET - 680px */
 
-@media only screen and (min-width: 42em) {
+@media only screen and (min-width: 680px) {
 
   html {
     font-size: 14px;
@@ -135,7 +140,8 @@ body {
   }
 
   body {
-    max-width: 42em;
+    width: 680px;
+    max-width: 680px;
   }
 
   .tab-col-1  { width:   8.333%; float: left; }
@@ -193,12 +199,16 @@ body {
   .tab-ins-67 { width: 66.7%; }
   .tab-ins-75 { width: 75%;   }
 
+  .ph-hide-inl  { display: inline; }
+  .ph-hide-blk  { display: block;  }
+  .ph-hide-ib   { display: none;   }
+
 }
 
 
-/* COMPUTER (laptop) - 60em (960px) */
+/* COMPUTER (laptop) - 960px */
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 960px) {
 
   html {
     font-size: 16px;
@@ -206,7 +216,8 @@ body {
   }
 
   body {
-    max-width: 60em;
+    width: 960px;
+    max-width: 960px;
   }
 
   .cmp-col-1  { width:   8.333%; float: left; }
@@ -275,9 +286,9 @@ body {
 }
 
 
-/* COMPUTER (desktop) - 68em (1088px) */
-
-@media only screen and (min-width: 68em) {
+/* COMPUTER (desktop) - 1120px */
+/* Currently disabled */
+@media only screen and (min-width: 1200px) {
 
   html {
     font-size: 19px;
@@ -285,10 +296,11 @@ body {
   }
 
   body {
-    max-width: 68em;
+    width: 1200px;
+    max-width: 1200px;
   }
-
 }
+/* */
 
 /**** HELPER CLASSES ****/
 
@@ -297,6 +309,8 @@ body {
   padding: 0;
   line-height: 0;
 }
+
+.ref-pt { position: relative;}
 
 .gtr-l {padding-left: 0.6rem;}
 .gtr-r {padding-right: 0.6rem;}
@@ -322,6 +336,10 @@ body {
 
 .headroom {
   padding-top: 0.75rem;
+}
+
+.no-footroom {
+  margin-bottom: 0;
 }
 
 .txt-ctr {
