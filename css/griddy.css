@@ -4,18 +4,64 @@
 *   @webdevjeffus
 *   https://github.com/webdevjeffus
 *   version: 0.1
+*
+*   GRIDDY is available for use under the GNU General Public License, Version 3
 */
 
 
 /**** RESET CLASSES ****/
 
-/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* Reset: from http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
+/* Reset: from HTML5Boilerplate */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* Reset: Griddy resets */
 
 body {
   margin: 0 auto;
@@ -59,7 +105,7 @@ img {
   width: 100%;
 }
 
-
+/**** END RESETS ****/
 
 
 /**** GRID SYSTEM CLASSES (Mobile First) ****/
@@ -69,14 +115,14 @@ img {
 html {
   font-size: 12px;
   line-height: 1.4;
-  color: blue;
-  background-color: #ccc;
+  color: blue;            /* Test value; reset */
+  background-color: #ccc; /* Test value; reset */
 }
 
 body {
   min-width: 320px;
   max-width: 400px;
-  background-color: #eee;
+  background-color: #eee; /* Test value; reset */
 }
 
 .row:after {
@@ -136,7 +182,7 @@ body {
 
   html {
     font-size: 14px;
-    color: green;
+    color: green; /* Test value; reset */
   }
 
   body {
@@ -206,13 +252,13 @@ body {
 }
 
 
-/* COMPUTER (laptop) - 960px */
+/* COMPUTER (small monitor) - 960px */
 
 @media only screen and (min-width: 960px) {
 
   html {
     font-size: 16px;
-    color: black;
+    color: black; /* Test value; reset */
   }
 
   body {
@@ -287,12 +333,12 @@ body {
 
 
 /* COMPUTER (desktop) - 1120px */
-/* Currently disabled */
+
 @media only screen and (min-width: 1200px) {
 
   html {
     font-size: 19px;
-    color: red;
+    color: red; /* Test value; reset */
   }
 
   body {
@@ -300,7 +346,9 @@ body {
     max-width: 1200px;
   }
 }
-/* */
+
+/**** END GRID SYSTEM CLASSES ****/
+
 
 /**** HELPER CLASSES ****/
 
@@ -310,18 +358,18 @@ body {
   line-height: 0;
 }
 
-.ref-pt { position: relative;}
+.ref-pt { position: relative; }
 
-.gtr-l {padding-left: 0.6rem;}
-.gtr-r {padding-right: 0.6rem;}
+.gtr-l {padding-left: 0.6rem; }
+.gtr-r {padding-right: 0.6rem; }
 
 .gtr {
   padding-left: 0.6rem;
   padding-right: 0.6rem;
 }
 
-.gtr-l-2x {padding-left: 1.2rem;}
-.gtr-r-2x {padding-right: 1.2rem;}
+.gtr-l-2x {padding-left: 1.2rem; }
+.gtr-r-2x {padding-right: 1.2rem; }
 
 .gtr-2x {
   padding-left: 1.2rem;
@@ -334,17 +382,13 @@ body {
   margin: 0.75rem 1%;
 }
 
-.headroom {
-  padding-top: 0.75rem;
-}
+.headroom    { padding-top: 0.75rem; }
+.no-headroom { padding-top: 0; }
 
-.no-footroom {
-  margin-bottom: 0;
-}
+.footroom    { margin-bottom: 0.75em; }
+.no-footroom { margin-bottom: 0; }
 
-.txt-ctr {
-  text-align: center;
-}
+.txt-ctr { text-align: center; }
 
 
 /* https://css-tricks.com/snippets/css/clear-fix/ */
