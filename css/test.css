@@ -23,3 +23,17 @@ aside {
   background-color: aqua;
   border: 1px solid blue;
 }
+
+.nav {
+  list-style: none;
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px black solid;
+}
