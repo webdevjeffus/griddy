@@ -5,7 +5,7 @@
 *   https://github.com/webdevjeffus
 *   version: 0.1
 *
-*   GRIDDY is available for use under the GNU General Public License, Version 3
+*   GRIDDY is available for use under the GNU General Public License, Version 3.
 */
 
 
@@ -108,6 +108,7 @@ img {
 /**** END RESETS ****/
 
 
+
 /**** GRID SYSTEM CLASSES (Mobile First) ****/
 
 /* PHONE - fluid 320-400px */
@@ -156,7 +157,6 @@ body {
 .box.ph-col-10 { width:  81.333%; float: left; }
 .box.ph-col-11 { width:  89.667%; float: left; }
 .box.ph-col-12 { width:  98%; }
-
 
 .ph-ins-25,
 .ph-ins-33,
@@ -292,7 +292,6 @@ body {
   .box.cmp-col-11 { width:  89.667%; float: left; }
   .box.cmp-col-12 { width:  98%; }
 
-
   .ph-ins-25,
   .ph-ins-33,
   .ph-ins-50,
@@ -350,16 +349,23 @@ body {
 /**** END GRID SYSTEM CLASSES ****/
 
 
+
 /**** HELPER CLASSES ****/
 
+/* Bleed - For elements with no margin, such as full-panel images */
 .bleed {
   margin: 0;
   padding: 0;
   line-height: 0;
 }
 
+
+/* Reference Point - Makes parent element reference point for child with position: absolute; */
 .ref-pt { position: relative; }
 
+
+/* Gutters */
+/* Under normal circumstances, apply .gtr to parent.row and all child.col elements */
 .gtr-l {padding-left: 0.6rem; }
 .gtr-r {padding-right: 0.6rem; }
 
@@ -376,22 +382,30 @@ body {
   padding-right: 1.2rem;
 }
 
+
+/* Boxed Element - Handles gutters and padding for boxed elements, such as sidebars. */
+/* Use in place of .gtr on child elements within row. */
 .box {
   padding-left: 1.2rem;
   padding-right: 1.2rem;
   margin: 0.75rem 1%;
 }
 
+
+/* Add or remove space above element - usually <h_> or <p> */
 .headroom    { padding-top: 0.75rem; }
 .no-headroom { padding-top: 0; }
 
+/* Add or remove space below element - usually <h_> or <p> */
 .footroom    { margin-bottom: 0.75em; }
 .no-footroom { margin-bottom: 0; }
+
 
 .txt-ctr { text-align: center; }
 
 
-/* https://css-tricks.com/snippets/css/clear-fix/ */
+/* Clearfix included in .row, above; included here for use on other elements */
+/* from: https://css-tricks.com/snippets/css/clear-fix/ */
 .clearfix:after {
   content: "";
   display: table;
