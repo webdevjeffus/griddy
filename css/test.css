@@ -6,3 +6,7 @@ header {
   background-color: coral;
   border: 1px red solid;
 }
+
+aside {
+  font-size: 0.8em;
+}
