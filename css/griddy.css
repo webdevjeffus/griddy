@@ -176,7 +176,10 @@ body {
   .tab-ins-17,
   .tab-ins-25,
   .tab-ins-33,
-  .tab-ins-50 {
+  .tab-ins-50,
+  .tab-ins-62,
+  .tab-ins-67,
+  .tab-ins-75 {
     float: right;
     padding-left: 1.2rem;
   }
@@ -186,6 +189,9 @@ body {
   .tab-ins-25 { width: 25%;   }
   .tab-ins-33 { width: 33%;   }
   .tab-ins-50 { width: 50%;   }
+  .tab-ins-62 { width: 62.5%; }
+  .tab-ins-67 { width: 66.7%; }
+  .tab-ins-75 { width: 75%;   }
 
 }
 
@@ -237,7 +243,10 @@ body {
   .tab-ins-17,
   .tab-ins-25,
   .tab-ins-33,
-  .tab-ins-50 {
+  .tab-ins-50
+  .tab-ins-62,
+  .tab-ins-67,
+  .tab-ins-75 { {
     width: 100%;
     float: none;
     padding-left: 0;
