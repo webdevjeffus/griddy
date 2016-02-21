@@ -64,6 +64,7 @@ textarea {
 /* Reset: Griddy resets */
 
 body {
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
 }
@@ -85,12 +86,12 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 0 0 0.6rem 0;
 }
 
 p {
   line-height: 1.4;
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 0.6rem 0;
 }
 
 h1:first-child,
@@ -100,12 +101,15 @@ h4:first-child,
 h5:first-child,
 h6:first-child,
  p:first-child {
-  margin-top: 0.75rem;
+  margin-top: 1.2rem;
 }
 
+p:last-child {
+  margin-bottom: 1.2rem;
+}
 
 img {
-margin: 0 0 0.75rem 0;
+margin: 0 0 1.2rem 0;
 width: 100%;
 }
 
@@ -124,7 +128,7 @@ html {
 .container {
   min-width: 320px;
   max-width: 400px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .row:after {
@@ -189,7 +193,7 @@ html {
     font-size: 14px;
   }
 
-  body {
+  .container {
     width: 680px;
     max-width: 680px;
   }
@@ -277,7 +281,7 @@ html {
     font-size: 16px;
   }
 
-  body {
+  .container {
     width: 960px;
     max-width: 960px;
   }
@@ -372,7 +376,7 @@ html {
     color: red; /* Test value; reset */
   }
 
-  body {
+  .container {
     width: 1200px;
     max-width: 1200px;
   }
@@ -412,6 +416,28 @@ html {
   padding-right: 1.2rem;
   margin: 0.75rem 1%;
 }
+
+.box:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.box h1,
+.box h2,
+.box h3,
+.box h4,
+.box h5,
+.box h6 {
+  display: inline-block;
+}
+
+.box img {
+  margin-top: 1.2rem;
+}
+
 
 /* Vertical Whitespace */
 /* Add or remove space above element - usually <h_> or <p> */
