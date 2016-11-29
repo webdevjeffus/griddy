@@ -112,8 +112,7 @@ html {
 }
 
 .row {
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding: 0.6rem;
 }
 
 .row:after {
@@ -462,7 +461,6 @@ html {
 .bleed {
   margin: 0;
   padding: 0;
-  line-height: 0;
 }
 
 /* Reference Point - Makes parent element reference point for child with position: absolute; */
