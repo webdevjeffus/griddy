@@ -69,9 +69,8 @@ body {
   padding: 0;
 }
 
-article,
-aside,
 section,
+article,
 aside,
 header,
 main,
@@ -86,36 +85,13 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+img {
   margin: 0;
   padding: 0.6rem 0;
 }
 
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child,
-h6:first-child,
- p:first-child {
-  padding-top: 1.2rem;
-}
-
-h1:last-child,
-h2:last-child,
-h3:last-child,
-h4:last-child,
-h5:last-child,
-h6:last-child,
-p:last-child,
-img:last-child {
-  padding-bottom: 1.2rem;
-}
-
-img {
-padding: 0.6rem 0;
-width: 100%;
-}
+img { width: 100%; }
 
 /**** END RESETS ****/
 
@@ -133,6 +109,11 @@ html {
   min-width: 320px;
   max-width: 400px;
   margin: 0 auto;
+}
+
+.row {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 
 .row:after {
@@ -459,10 +440,10 @@ html {
 }
 
 /* Add or remove space below element - usually <h_> or <p> */
-.ftrm-2x    { margin-bottom: 2.4rem; }
-.ftrm-more  { margin-bottom: 1.8rem; }
-.ftrm       { margin-bottom: 1.2rem; }
-.ftrm-half  { margin-bottom: 0.6rem; }
+.ftrm-2x    { padding-bottom: 2.4rem; }
+.ftrm-more  { padding-bottom: 1.8rem; }
+.ftrm       { padding-bottom: 1.2rem; }
+.ftrm-half  { padding-bottom: 0.6rem; }
 .ftrm-none  {
   padding-bottom: 0;
   margin-bottom: 0;
