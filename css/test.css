@@ -15,7 +15,7 @@ aside {
 .bg-aqua    { background-color: aqua; }
 .bg-white   { background-color: white; }
 
-.nav {
+.nav-list {
   list-style: none;
   float: right;
   position: absolute;
@@ -28,3 +28,5 @@ aside {
   padding: 0 1rem;
   border-left: 1px black solid;
 }
+
+.nav-link:first-child { border: none; }
