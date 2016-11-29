@@ -99,8 +99,8 @@ h2:first-child,
 h3:first-child,
 h4:first-child,
 h5:first-child,
-h6:first-child,
- p:first-child {
+h6:first-child/*,
+ p:first-child*/ {
   margin-top: 1.2rem;
 }
 
@@ -441,28 +441,31 @@ html {
 
 /* Vertical Whitespace */
 /* Add or remove space above element - usually <h_> or <p> */
-.headroom-2x    { padding-top: 2rem; }
-.headroom-more  { padding-top: 1.5rem; }
-.headroom       { padding-top: 1rem; }
-.headroom-half  { padding-top: 0.5rem; }
-.no-headroom    {
+.hdrm-2x    { padding-top: 2.4rem; }
+.hdrm-more  { padding-top: 1.8rem; }
+.hdrm       { padding-top: 1.2rem; }
+.hdrm-half  { padding-top: 0.6rem; }
+.hdrm-none  {
   padding-top: 0;
   margin-top: 0;
 }
 
 /* Add or remove space below element - usually <h_> or <p> */
-.footroom-more { margin-bottom: 1.5rem; }
-.footroom    { margin-bottom: 1rem; }
-.footroom-half { margin-bottom: 0.5rem; }
-.no-footroom {
+.ftrm-2x    { margin-bottom: 2.4rem; }
+.ftrm-more  { margin-bottom: 1.8rem; }
+.ftrm       { margin-bottom: 1.2rem; }
+.ftrm-half  { margin-bottom: 0.6rem; }
+.ftrm-none  {
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
 /* Increase or decrease MARGIN space above element - usually a .box-item */
-.headroom-bx-more { margin-top: 1.5rem; }
-.headroom-bx      { margin-top: 1rem;}
-.headroom-bx-less { margin-top: 0.5rem; }
+.hdrm-bx-2x   { margin-top: 2.4rem; }
+.hdrm-bx-more { margin-top: 1.8rem; }
+.hdrm-bx      { margin-top: 1.2rem;}
+.hdrm-bx-less { margin-top: 0.5rem; }
+.hdrm-bx-none { margin-top: 0; }
 
 
 /* Miscellaneous Helpers */
