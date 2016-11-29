@@ -15,17 +15,22 @@ aside {
 .bg-aqua    { background-color: aqua; }
 .bg-white   { background-color: white; }
 
-.nav-list {
-  list-style: none;
+.main-nav {
   float: right;
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
+.nav-list {
+  list-style: none;
+  text-align: right;
+  padding: 0 0.6rem;
+}
+
 .nav-link {
   display: inline-block;
-  padding: 0 1rem;
+  padding: 0 0.6rem;
   border-left: 1px black solid;
 }
 
