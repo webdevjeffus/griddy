@@ -99,9 +99,9 @@ h2:first-child,
 h3:first-child,
 h4:first-child,
 h5:first-child,
-h6:first-child/*,
- p:first-child*/ {
-  margin-top: 1.2rem;
+h6:first-child,
+ p:first-child {
+  padding-top: 1.2rem;
 }
 
 p:last-child {
