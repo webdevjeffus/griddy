@@ -29,13 +29,13 @@
     <!-- PAGE HEADER -->
     <header class="ref-pt row gtr    bg-coral border-red">
 
-      <div class="ph-col-12 tab-col-6 gtr">
+      <div class="ph-col-12 tab-col-6 gtr     border-green">
         <h1 class="ftrm-none">griddy</h1>
-        <p class="hdrm-none">A lightweight, responsive 12-column grid system</p>
+        <p>A lightweight, responsive 12-column grid system</p>
       </div>
 
-      <nav class="ph-hide-blk tab-col-6 gtr">
-        <ul class="     nav-list">
+      <nav class="ph-hide-blk tab-col-6     main-nav border-green">
+        <ul class="gtr     nav-list">
           <a class="     nav-link" href="#"><li>WORK</li></a>
           <a class="     nav-link" href="#"><li>BLOG</li></a>
           <a class="     nav-link" href="#"><li>ABOUT</li></a>
@@ -51,37 +51,39 @@
       <!-- SPLASH IMAGE -->
       <section class="    border-red">
         <img class="bleed" src="http://placehold.it/960x488/bb0044/ffffff?text=Hero+Image">
-        <p class="hdrm ftrm">The image above and this line of text are contained in a single section. This text is in a simple &lt;p&gt; element.</p>
+        <div class="row gtr-2x">
+          <p>The image above and this line of text are contained in a single section. This text is in a simple &lt;p&gt; element.</p>
+        </div>
       </section>
 
       <!-- FEATURE PANELS -->
       <section class="     border-red">
 
-        <header class="row    bg-coral">
-          <h2 class="txt-ctr">This is a responsive set of feature panels</h2>
+        <header class="row gtr-2x   bg-coral">
+          <h1 class="     border-green">Responsive feature panels</h2>
         </header>
 
-        <div class="row gtr hdrm-half     border-blue">
+        <div class="row gtr hdrm-half     border-green">
 
-          <section class="ph-col-12 tab-col-12 cmp-col-6 gtr     border-green">
+          <section class="ph-col-12 tab-col-12 cmp-col-6 gtr     border-blue">
             <img class="" src="http://placehold.it/1000x500/4400bb/ffffff?text=Panel+Image">
             <h3 class="ftrm-none">First panel</h3>
             <p>There are four panels in all, but not all appear at all screen sizes.</p>
           </section>
 
-          <section class="ph-col-12 tab-col-6 cmp-col-6 gtr     border-green">
+          <section class="ph-col-12 tab-col-6 cmp-col-6 gtr     border-blue">
             <img class="" src="http://placehold.it/1000x500/4400bb/ffffff?text=Panel+Image">
             <h3 class="ftrm-none">Second panel</h3>
             <p>Because the arrangement of the panels uses the <strong>float</strong> property, improper placement may occur if the panels are not similar in height.</p>
           </section>
 
-          <section class="ph-col-12 tab-col-6 cmp-col-6 gtr     border-green">
+          <section class="ph-col-12 tab-col-6 cmp-col-6 gtr     border-blue">
             <img class="" src="http://placehold.it/1000x500/4400bb/ffffff?text=Panel+Image">
             <h3 class="ftrm-none">Third panel</h3>
             <p>Be sure to verify placement at all four screen sizes to be sure <strong>float</strong> hasn't caused errors.</p>
           </section>
 
-          <section class="ph-hide-blk tab-hide-blk cmp-col-6 gtr     border-green">
+          <section class="ph-hide-blk tab-hide-blk cmp-col-6 gtr     border-blue">
             <img class="" src="http://placehold.it/1000x500/4400bb/ffffff?text=Panel+Image">
             <h3 class="ftrm-none">Fourth panel</h3>
             <p>This panel is hidden on smaller screens.</p>
@@ -94,7 +96,13 @@
 
 
       <!-- ARTICLE/ASIDE LAYOUT -->
-      <section class="row gtr     border-red">
+      <section class="     border-red">
+
+        <header class="row gtr-2x     bg-coral">
+          <h1 class="     border-green">Article/aside layout</h2>
+        </header>
+
+        <div class="row gtr">
 
         <article class="ph-col-12 tab-col-8 gtr     border-blue">
           <h2>This section includes main content and a sidebar</h2>
@@ -122,14 +130,20 @@
           <p>Irony Blue Bottle mlkshk flexitarian meditation. Mustache cronut direct trade stumptown mumblecore flannel. Pinterest kogi chillwave, forage slow-carb mixtape brunch lumbersexual tofu wayfarers ennui gastropub. Seitan narwhal Truffaut bespoke lo-fi squid McSweeney's, Helvetica whatever put a bird on it twee. </p>
         </aside>
 
+      </div>
+
       </section><!-- ARTICLE/ASIDE LAYOUT -->
 
       <!-- BOXED CONTENT -->
       <section class="     border-red">
 
-        <h2 class="txt-ctr">This section contains three blocks of boxed text</h2>
+        <header class="row gtr-2x      bg-coral">
+          <h1 class="     border-green">Boxed content</h2>
+        </header>
 
-        <div class="row gtr">
+        <div class="row gtr     border-green">
+
+          <h3 class="gtr">These text boxes might be used as blog teasers</h3>
 
           <article class="ph-col-12 tab-col-12 cmp-col-4 box    bg-aqua border-blue">
             <h3>All three boxes are visible at all screen sizes</h3>
@@ -156,7 +170,7 @@
   </main>
 
 
-  <footer class="row gtr     bg-coral">
+  <footer class="row gtr-2x     bg-coral">
     <p>This is the footer text.</p>
   </footer>
 
