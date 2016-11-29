@@ -23,22 +23,22 @@ html {
 /* Reset: from HTML5Boilerplate */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 audio,
@@ -47,17 +47,17 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 
@@ -85,14 +85,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0 0 0.6rem 0;
+h6,
+p {
+  margin: 0;
+  padding: 0 0 0.6rem 0;
 }
 
-p {
-  line-height: 1.4;
-  margin: 0 0 0.6rem 0;
-}
+p { line-height: 1.4; }
 
 h1:first-child,
 h2:first-child,
@@ -104,12 +103,18 @@ h6:first-child,
   padding-top: 1.2rem;
 }
 
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
 p:last-child {
-  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 
 img {
-margin: 0 0 1.2rem 0;
+padding: 0 0 1.2rem 0;
 width: 100%;
 }
 
@@ -434,8 +439,12 @@ html {
   display: inline-block;
 }
 
+.box img {
+  padding-top: 0.6rem;
+}
+
 .box img:first-child {
-  margin-top: 1.2rem;
+  padding-top: 1.2rem;
 }
 
 
