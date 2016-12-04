@@ -9,15 +9,18 @@
 */
 
 
-/**** RESET CLASSES ****/
+/* RESET CLASSES *****************************************************\
+\* Restore commented styles if not using with drop-in.css ************/
 
 /* Reset from http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/*
 html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
+*/
 
 
 /* Resets from HTML5Boilerplate */
-
+/*
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -51,25 +54,18 @@ fieldset {
 }
 
 textarea { resize: vertical; }
+*/
 
 
 /* Reset: Griddy resets */
-
-body {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0;
-}
-
+body,
 section,
 article,
 aside,
 header,
 main,
 footer,
-nav {
-  padding: 0;
-}
+nav { padding: 0; }
 
 h1,
 h2,
@@ -83,19 +79,24 @@ img {
   padding: 0.6rem 0;
 }
 
-img { width: 100%; }
-
-/**** END RESETS ****/
+/* END RESETS ********************************************************/
 
 
 
-/**** GRID SYSTEM CLASSES (Mobile First) ****/
-
-/* PHONE - fluid 320-400px */
+/* GRID SYSTEM CLASSES (Mobile First) ********************************/
 
 html {
   font-size: 12px;
 }
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+img { width: 100%; }
+
+/* PHONE - fluid 320-400px *******************************************/
 
 .container {
   min-width: 320px;
@@ -347,10 +348,7 @@ html {
 
 @media only screen and (min-width: 1200px) {
 
-  html {
-    font-size: 19px;
-    color: red; /* Test value; reset */
-  }
+  html { font-size: 19px; }
 
   .container {
     width: 1200px;
@@ -446,6 +444,14 @@ html {
 .hdrm-bx      { margin-top: 1.2rem;}
 .hdrm-bx-less { margin-top: 0.5rem; }
 .hdrm-bx-none { margin-top: 0; }
+
+
+/* Remove borders from element - usually a section */
+.no-border { border: none; }
+section.no-border {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 
 /* Miscellaneous Helpers */
