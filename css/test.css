@@ -1,37 +1,22 @@
-html { background-color: silver; }
-}
-
 aside {
   font-size: 0.8em;
 }
 
-.border-red   { border: 1px red solid; }
-.border-green { border: 1px green solid; }
-.border-blue  { border: 1px blue solid; }
-.border-black { border: 1px black solid; }
-
-.bg-coral   { background-color: coral; }
-.bg-yellow  { background-color: yellow; }
-.bg-aqua    { background-color: aqua; }
-.bg-white   { background-color: white; }
+.box { background-color: #bbb;}
 
 .main-nav {
   float: right;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  text-align: right;
 }
 
 .nav-list {
   list-style: none;
-  text-align: right;
-  padding: 0 0.6rem;
 }
 
-.nav-link {
+.nav-li {
   display: inline-block;
   padding: 0 0.6rem;
-  border-left: 1px black solid;
+/*  border-left: 1px black solid;*/
 }
 
 .nav-link:first-child { border: none; }
