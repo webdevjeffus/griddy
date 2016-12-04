@@ -228,7 +228,7 @@ header div { float: left; }
 
 header h1 {
   font-size: 4rem;
-  line-height: .8;
+  padding-top: 0;
 }
 
 header p {
