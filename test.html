@@ -9,7 +9,8 @@
     <meta name="author" content="Jeff George">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/drop-in.css">
     <link rel="stylesheet" href="css/griddy.css">
     <link rel="stylesheet" href="css/test.css"><!-- Replaces main.css for testing -->
 
@@ -20,36 +21,36 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body class="container">
     <!-- OUTDATED BROWSER WARNING borrowed from HTML5Boilerplate -->
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- PAGE HEADER -->
-    <header class="ref-pt row gtr    bg-coral border-red">
+    <header class="row gtrs">
 
-      <div class="ph-col-12 tab-col-6 gtr     border-green">
+      <div class="ph-col-12 tab-col-6 gtr">
         <h1 class="ftrm-none">griddy</h1>
         <p>A lightweight, responsive 12-column grid system</p>
       </div>
 
-      <nav class="ph-hide-blk tab-col-6     main-nav border-green">
-        <ul class="gtr     nav-list">
-          <a class="     nav-link" href="#"><li>WORK</li></a>
-          <a class="     nav-link" href="#"><li>BLOG</li></a>
-          <a class="     nav-link" href="#"><li>ABOUT</li></a>
-          <a class="     nav-link" href="#"><li>CONTACT</li></a>
+      <nav class="ph-hide-blk tab-col-6 gtr    main-nav">
+        <ul class="     nav-list">
+          <li class="     nav-link"><a href="#">WORK</a>
+          <li class="     nav-link"><a href="#">BLOG</a></li>
+          <li class="     nav-link"><a href="#">ABOUT</a></li>
+          <li class="     nav-link"><a href="#">CONTACT</a></li>
         </ul>
       </nav>
 
     </header><!-- /PAGE HEADER -->
 
 
-    <main class="container     bg-white">
+    <main>
 
       <!-- SPLASH IMAGE -->
-      <section class="    border-red">
+      <section>
         <img class="bleed" src="http://placehold.it/960x488/bb0044/ffffff?text=Hero+Image">
         <div class="row gtr-2x">
           <p>The image above and this line of text are contained in a single section. This text is in a simple &lt;p&gt; element.</p>
@@ -57,33 +58,33 @@
       </section><!-- /SPLASH IMAGE -->
 
       <!-- FEATURE PANELS -->
-      <section class="     border-red">
+      <section>
 
-        <header class="row gtr-2x   bg-coral">
-          <h1 class="     border-green">Responsive feature panels</h2>
+        <header class="row gtr-2x">
+          <h1>Responsive feature panels</h2>
         </header>
 
-        <div class="row gtr hdrm-half     border-green">
+        <div class="row gtr hdrm-half">
 
-          <section class="ph-col-12 tab-col-12 cmp-col-6 gtr     border-blue">
+          <section class="ph-col-12 tab-col-12 cmp-col-6 gtr no-border">
             <img class="" src="http://placehold.it/1000x500/4400bb/ffffff?text=Panel+Image">
             <h3 class="ftrm-none">First panel</h3>
             <p>There are four panels in all, but not all appear at all screen sizes.</p>
           </section>
 
-          <section class="ph-col-12 tab-col-6 cmp-col-6 gtr     border-blue">
+          <section class="ph-col-12 tab-col-6 cmp-col-6 gtr no-border">
             <img class="" src="http://placehold.it/1000x500/4400bb/ffffff?text=Panel+Image">
             <h3 class="ftrm-none">Second panel</h3>
             <p>Because the arrangement of the panels uses the <strong>float</strong> property, improper placement may occur if the panels are not similar in height.</p>
           </section>
 
-          <section class="ph-col-12 tab-col-6 cmp-col-6 gtr     border-blue">
+          <section class="ph-col-12 tab-col-6 cmp-col-6 gtr no-border">
             <img class="" src="http://placehold.it/1000x500/4400bb/ffffff?text=Panel+Image">
             <h3 class="ftrm-none">Third panel</h3>
             <p>Be sure to verify placement at all four screen sizes to be sure <strong>float</strong> hasn't caused errors.</p>
           </section>
 
-          <section class="ph-hide-blk tab-hide-blk cmp-col-6 gtr     border-blue">
+          <section class="ph-hide-blk tab-hide-blk cmp-col-6 gtr no-border">
             <img class="" src="http://placehold.it/1000x500/4400bb/ffffff?text=Panel+Image">
             <h3 class="ftrm-none">Fourth panel</h3>
             <p>This panel is hidden on smaller screens.</p>
@@ -95,15 +96,15 @@
 
 
       <!-- ARTICLE/ASIDE LAYOUT -->
-      <section class="     border-red">
+      <section>
 
-        <header class="row gtr-2x     bg-coral">
-          <h1 class="     border-green">Article/aside layout</h2>
+        <header class="row gtr-2x">
+          <h1>Article/aside layout</h2>
         </header>
 
         <div class="row gtr">
 
-          <article class="ph-col-12 tab-col-8 gtr     border-blue">
+          <article class="ph-col-12 tab-col-8 gtr">
             <h2>This section includes main content and a sidebar</h2>
 
             <p>The content in this section contains an &lt;article&gt; and an &lt;aside&gt;. On phones, both elements are full-width, with the article first and the aside second. This is accomplished by assigning both elements the <strong>ph-col-12</strong> class.</p>
@@ -117,7 +118,7 @@
             <p>McSweeney's post-ironic bicycle rights street art, banh mi cold-pressed polaroid. Normcore mixtape distillery, Williamsburg organic sartorial Etsy Tumblr. Four loko Truffaut Blue Bottle fap, wolf Neutra kogi YOLO you probably haven't heard of them actually aesthetic bespoke gentrify. Scenester Williamsburg flannel meditation, brunch pour-over butcher photo booth Brooklyn mixtape swag vinyl cray. Pickled Williamsburg salvia stumptown. Artisan Vice quinoa, semiotics actually 3 wolf moon VHS whatever 8-bit literally Pitchfork Truffaut. Disrupt salvia umami, DIY post-ironic raw denim organic.</p>
           </article >
 
-          <aside class="ph-col-12 tab-col-4 box     bg-aqua border-blue">
+          <aside class="ph-col-12 tab-col-4 box">
             <h2>The sidebar contains text and an image</h2>
 
             <img class="ph-ins-33 tab-hide-blk cmp-ins-50" src="http://placehold.it/400x500/440044/ffffff?text=Author+image">
@@ -135,29 +136,29 @@
 
 
       <!-- BOXED CONTENT -->
-      <section class="     border-red">
+      <section>
 
-        <header class="row gtr-2x      bg-coral">
-          <h1 class="     border-green">Boxed content</h2>
+        <header class="row gtr-2x">
+          <h1>Boxed content</h2>
         </header>
 
-        <div class="row gtr     border-green">
+        <div class="row gtr">
 
-          <h3 class="gtr">These text boxes might be used as blog teasers</h3>
+          <h2 class="gtr">These text boxes might be used as blog teasers</h3>
 
-          <article class="ph-col-12 tab-col-12 cmp-col-4 box    bg-aqua border-blue">
+          <article class="ph-col-12 tab-col-12 cmp-col-4 box">
             <h3>All three boxes are visible at all screen sizes</h3>
 
             <p>Brooklyn actually gastropub hashtag umami, listicle sriracha food truck DIY migas craft beer Blue Bottle seitan. Keffiyeh cornhole American Apparel authentic cray, readymade chillwave chambray Godard narwhal cardigan distillery dreamcatcher. Salvia retro food truck, wayfarers whatever stumptown iPhone fixie. Church-key VHS direct trade Williamsburg swag, plaid Thundercats meh meggings. Taxidermy plaid brunch, banh mi tattooed vegan pickled butcher bitters vinyl Carles. Cray Intelligentsia ugh occupy.</p>
           </article>
 
-          <article class="ph-col-12 tab-col-12 cmp-col-4 box    bg-aqua border-blue">
+          <article class="ph-col-12 tab-col-12 cmp-col-4 box">
             <h3>They appear side-by-side on computer screens</h3>
 
             <p>Mumblecore lumbersexual cliche salvia chambray Neutra, vinyl four dollar toast. Mumblecore hoodie viral taxidermy. PBR&B migas actually cardigan twee Helvetica, meh dreamcatcher tousled cornhole listicle McSweeney's tofu. Chambray single-origin coffee typewriter, deep v semiotics try-hard readymade cardigan gastropub fanny pack swag vinyl tilde seitan. Fashion axe pork belly meh, photo booth authentic banjo skateboard put a bird on it cliche mixtape DIY typewriter McSweeney's. Tofu typewriter disrupt salvia viral mixtape, pop-up PBR&B swag +1 synth small batch.</p>
           </article>
 
-          <article class="ph-col-12 tab-col-12 cmp-col-4 box    bg-aqua border-blue">
+          <article class="ph-col-12 tab-col-12 cmp-col-4 box">
             <h3>But they stack on tablet and phone screens</h3>
 
             <p>Pinterest readymade Carles bitters, listicle sustainable brunch small batch Helvetica try-hard. Gentrify Wes Anderson lumbersexual cold-pressed pour-over pop-up. Synth freegan slow-carb, banh mi church-key Echo Park 3 wolf moon kitsch actually Helvetica brunch. Lomo cred disrupt, Echo Park pickled American Apparel trust fund bicycle rights leggings. +1 shabby chic plaid, blog messenger bag put a bird on it church-key bespoke Brooklyn hashtag bicycle rights. Intelligentsia mlkshk cliche Odd Future taxidermy. Blog Odd Future ugh +1 tilde, actually McSweeney's cray Bushwick.</p>
@@ -170,8 +171,17 @@
   </main>
 
   <!-- PAGE FOOTER -->
-  <footer class="row gtr-2x     bg-coral">
+  <footer class="row gtr-2x">
+    <h2>griddy &bull; the lightweight, responsive grid system</h2>
     <p>This is the footer text.</p>
+    <nav>
+        <ul class="     nav-list">
+          <li class="     nav-link"><a href="#">WORK</a>
+          <li class="     nav-link"><a href="#">BLOG</a></li>
+          <li class="     nav-link"><a href="#">ABOUT</a></li>
+          <li class="     nav-link"><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
   </footer><!-- /PAGE FOOTER -->
 
 
