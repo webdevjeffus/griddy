@@ -11,16 +11,12 @@
 
 /**** RESET CLASSES ****/
 
-/* Reset: from http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+/* Reset from http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
 
 
-/* Reset: from HTML5Boilerplate */
+/* Resets from HTML5Boilerplate */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -46,9 +42,7 @@ canvas,
 iframe,
 img,
 svg,
-video {
-  vertical-align: middle;
-}
+video { vertical-align: middle; }
 
 fieldset {
   border: 0;
@@ -56,9 +50,7 @@ fieldset {
   padding: 0;
 }
 
-textarea {
-  resize: vertical;
-}
+textarea { resize: vertical; }
 
 
 /* Reset: Griddy resets */
