@@ -10,7 +10,7 @@
 
 
 /* RESET CLASSES *****************************************************\
-\* Restore commented styles if not using with drop-in.css ************/
+\* Restore commented styles if NOT using with drop-in.css ************/
 
 /* Reset from http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 /*
@@ -85,9 +85,7 @@ img {
 
 /* GRID SYSTEM CLASSES (Mobile First) ********************************/
 
-html {
-  font-size: 12px;
-}
+html { font-size: 12px; }
 
 body {
   min-width: 320px;
@@ -104,9 +102,7 @@ img { width: 100%; }
   margin: 0 auto;
 }
 
-.row {
-  padding: 0.6rem;
-}
+.row { padding: 0.6rem; }
 
 .row:after {
   content: "";
@@ -157,18 +153,14 @@ img { width: 100%; }
 /* Hide element at phone width */
 .ph-hide-inl,
 .ph-hide-blk,
-.ph-hide-ib {
-  display: none;
-}
+.ph-hide-ib { display: none; }
 
 
 /* TABLET - 680px */
 
 @media only screen and (min-width: 680px) {
 
-  html {
-    font-size: 14px;
-  }
+  html { font-size: 14px; }
 
   .container {
     width: 680px;
@@ -243,9 +235,7 @@ img { width: 100%; }
   /* Hide element at tablet width */
   .tab-hide-inl,
   .tab-hide-blk,
-  .tab-hide-ib {
-    display: none;
-  }
+  .tab-hide-ib { display: none; }
 
 }
 
@@ -254,9 +244,7 @@ img { width: 100%; }
 
 @media only screen and (min-width: 960px) {
 
-  html {
-    font-size: 16px;
-  }
+  html { font-size: 16px; }
 
   .container {
     width: 960px;
@@ -337,9 +325,7 @@ img { width: 100%; }
   /* Hide element at computer widths */
   .cmp-hide-inl,
   .cmp-hide-blk,
-  .cmp-hide-ib {
-    display: none;
-  }
+  .cmp-hide-ib { display: none; }
 
 }
 
@@ -404,17 +390,11 @@ img { width: 100%; }
 .box h3,
 .box h4,
 .box h5,
-.box h6 {
-  display: inline-block;
-}
+.box h6 { display: inline-block; }
 
-.box img {
-  padding-top: 0.6rem;
-}
+.box img { padding-top: 0.6rem; }
 
-.box img:first-child {
-  padding-top: 1.2rem;
-}
+.box img:first-child { padding-top: 1.2rem; }
 
 
 /* Vertical Whitespace */
@@ -479,10 +459,10 @@ section.no-border {
 
 /* From H5BP; used in 'Outdated Browser Warning' in index.html */
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 
