@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>griddy.css Demo Page</title>
+    <meta name="description" content="A sample page demonstrating griddy.css and drop-in.css">
     <meta name="author" content="Jeff George">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+    <!-- Turn this link on for normalize.css if you are not using drop-in.css
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    -->
     <link rel="stylesheet" href="css/drop-in.css">
     <link rel="stylesheet" href="css/griddy.css">
     <link rel="stylesheet" href="css/test.css"><!-- Replaces main.css for testing -->
-
-    <!-- HTML5SHIV script borrowed from HTML5Boilerplate -->
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-    <![endif]-->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
 
   <body class="container">
@@ -184,6 +186,9 @@
       </nav>
   </footer><!-- /PAGE FOOTER -->
 
+  <!-- JAVASCRIPT -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/main.js"></script>
 
   </body>
 </html>
