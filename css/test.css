@@ -1,22 +1,8 @@
-aside {
-  font-size: 0.8em;
-}
+aside { font-size: 0.8em; }
 
-.box { background-color: #bbb;}
+.box { background-color: #bbb; }
 
-.main-nav {
+.page-nav {
   float: right;
   text-align: right;
 }
-
-.nav-list {
-  list-style: none;
-}
-
-.nav-li {
-  display: inline-block;
-  padding: 0 0.6rem;
-/*  border-left: 1px black solid;*/
-}
-
-.nav-link:first-child { border: none; }
